@@ -8,7 +8,7 @@ import keyboard
 import serial
 
 
-model = torch.hub.load(r'D:\Iseng\mouse_driver\script\yolov5','custom', path=r'D:\Iseng\mouse_driver\script\best.pt', source='local')
+model = torch.hub.load(r'mouse_driver\script\yolov5','custom', path=r'mouse_driver\script\best.pt', source='local')
 arduino = serial.Serial("com4", "115200", timeout = .1)
 
 def SendCoordinate(code):
